@@ -5,7 +5,7 @@ const ws = require("ws")//引入ws模块
 // const webSocketServer = webSocket.server//引入server类
 
 var wss = new ws.Server({
-  port: 80,
+  port: 3000,
 },console.log("创建服务器成功"));
  
 
@@ -72,6 +72,6 @@ server.on('connection', function(ws) {
   })
 });
 
-server.listen(3000, function listening() {
+server.listen(80, function listening() {
   console.log('服务器启动成功！');
 });
